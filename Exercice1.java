@@ -8,7 +8,7 @@ public class Exercice1 {
 		System.out.println("Bonjour, Quel est votre nom?");
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
-		System.out.println("Vous vous appelez " + str );
+		System.out.println("Bonjour " + str + " !");
 	}
 
 }
