@@ -14,7 +14,7 @@ public class Exercice6 {
 			int a = sc.nextInt();
 			System.out.println("Saisir un deuxième nombre compris entre -1000 et 1000");
 			int b = sc.nextInt();
-			System.out.println("Saisir un opérateur");
+			System.out.println("Saisir un opérateur (+, -, * ou /)");
 			sc.nextLine();	
 			String operator = sc.nextLine();
 		
