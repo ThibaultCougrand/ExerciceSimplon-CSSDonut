@@ -9,6 +9,7 @@ public class Exercice1 {
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		System.out.println("Bonjour " + str + " !");
+		scan.close();
 	}
 
 }

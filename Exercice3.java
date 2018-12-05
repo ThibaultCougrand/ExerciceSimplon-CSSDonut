@@ -10,5 +10,6 @@ public class Exercice3 {
 		for (int i = 0; i <= 10; i++) {
 			System.out.println(table + " fois " + i + " est égale à " + i * table);
 		}
+	scan.close();
 	}
 }

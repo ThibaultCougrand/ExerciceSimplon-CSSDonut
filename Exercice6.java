@@ -45,5 +45,6 @@ public class Exercice6 {
 				System.out.println("Au moins une de vos saisis ne sont pas compris entre 1000 et -1000");
 			}
 		}
+	sc.close();
 	}
 }
