@@ -37,9 +37,12 @@ public class Exercice6 {
 							System.out.println("On ne peut pas faire de division par 0");
 						}
 					break;
-					default : System.out.println("L'opérateur n'est pas valide!");
+					default : System.out.println("L'opérateur n'est pas valide je fais donc une addition");
+					System.out.println(a + b);
 					break;
 				}
+			} else {
+				System.out.println("Au moins une de vos saisis ne sont pas compris entre 1000 et -1000");
 			}
 		}
 	}
