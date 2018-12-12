@@ -16,11 +16,9 @@ public class Exercice13 {
 		String saisi = sc.nextLine();//saisi la chaine.
 		System.out.println("Maintenant saisissez une lettre.");
 		String saisiL = sc.nextLine();//saisi la lettre à chercher.
-		char saisiLC = saisiL.charAt(0);//converti en char la lettre de ma saisi de lettre à la position 0.
 		int count = 0;//conteur du nombre de fois la lettre.
 		for (int i = 0; i < saisi.length(); i++) {//parcoure toute la string.
-			char src = saisi.charAt(i);//converti la lettre à la position i de ma phrase en char pour la comparer à ma lettre.
-			if (src == saisiLC) {//maintenant je les compare et si elles sont identiques.
+			if (saisi.charAt(i) == saisiL.charAt(0)) {//je compare tout les char de ma première string avec le char de ma lettre.
 				count++;//+1 au compteur.
 			}
 		}
