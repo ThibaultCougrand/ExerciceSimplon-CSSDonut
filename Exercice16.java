@@ -23,7 +23,7 @@ public class Exercice16 {
 		if (palindrome == mot.length()) {//si le compteur = à la taille du mot.
 			System.out.println("c'est un palindrome.");
 		} else {
-			System.out.println("ce n'en est pas un.");
+			System.out.println("ce n'est pas un palindrome.");
 		}
 		sc.close();
 	}
