@@ -15,7 +15,7 @@ public class Exercice16 {
 		String mot = sc.nextLine();
 		int palindrome = 0;//compteur du nombre de lettres identiques.
 		for (int i = 0; i < mot.length(); i++) {//boucle qui parcour le mot.
-			if (mot.charAt(i) == mot.charAt(mot.length()- 1 - i)) {//condition qui compare les lettres opposées entre elles en parcourant tout le mot dans les deux sens.
+			if (mot.charAt(i) == (mot.charAt(mot.length()- 1 - i))) {//condition qui compare les lettres opposées entre elles en parcourant tout le mot dans les deux sens.
 				palindrome++;//a chaque bonne comparaison ajoute 1 au compteur.
 			} else {
 			}
