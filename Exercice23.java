@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercice23 {
 	/**
-	 * Exercice 22
+	 * Exercice 23
 	 * (Upgrade de l'exercice 14)
 	 * Demandez à l'utilisateur de saisir un mot
 	 * Ecrivez une méthode qui prend en paramètre une chaine de caractère et qui retourne cette chaine en majuscule.
