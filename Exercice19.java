@@ -10,24 +10,24 @@ public class Exercice19 {
 	 * Ré-afficher le tableau une fois trié.
 	 */
 	public static void main(String[] args) {
-		int[] tab1 = new int[8];
-		for (int i = 0; i < tab1.length; i++) {
-			double random = Math.random()*101;
-			tab1[i] = (int)random;
-			System.out.print(tab1[i]+" ");
+		int[] tab1 = new int[8];//initialise un tableau de 8 cases.
+		for (int i = 0; i < tab1.length; i++) {//boucle qui parcourt le tableau.
+			double random = Math.random()*101;//variable qui génère un nombre de 0 à 100.
+			tab1[i] = (int)random;//le converti en int et l'insert dans chaques cases du tableau.
+			System.out.print(tab1[i]+" ");//affiche le tableau.
 		}
 		System.out.println("\n");
-		for (int i = 0; i < tab1.length; i++){
-			for (int j = 1; j < tab1.length; j++) {
-				if (tab1[j-1] > tab1[j]) {
-					int vide = tab1[j-1];
-					tab1[j-1] = tab1[j];
-					tab1[j] = vide;
+		for (int i = 0; i < tab1.length; i++){//boucle qui parcourt mon tableau 8 fois.
+			for (int j = 1; j < tab1.length; j++) {//boucle qui parcourt mon tableau à partir de la case 2.
+				if (tab1[j-1] > tab1[j]) {//si la case à gauche de ma case j est > à j alors
+					int vide = tab1[j-1];//on créer une variable sur j-1,
+					tab1[j-1] = tab1[j];// on met j-1 sur j,
+					tab1[j] = vide;//et j sur la case où été j-1.
 				}
 			}
 		}
 		
-		for (int i = 0; i < tab1.length; i++) {
+		for (int i = 0; i < tab1.length; i++) {//on affiche le tableau une fois trié.
 			System.out.print(tab1[i]+ " ");
 		}
 		

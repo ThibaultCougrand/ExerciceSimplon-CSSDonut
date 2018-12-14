@@ -61,10 +61,16 @@ public class Exercice17 {
 					System.out.println("Vous devez saisir UNE lettre !");
 				}
 			}
+			int count = 0;
 			for (int i = 0; i < mot.length();i++) {//boucle verif saisi de lettre est dans le mot.
 				if (mot.charAt(i) == essai.charAt(0)) {//si elle y est
 					motHide[i] = " " + essai;//on l'ajoute au tableau caché.	
+				} else {//sinon
+					count++;//compteur pour erreur.
 				}
+			}
+			if (count == mot.length()) {//si compteur = taille du mot
+				error++;//1 erreur.
 			}
 			for (int i = 0; i < mot.length(); i++) {//boucle qui affiche le mot cacher avec les lettres trouvées.
 				System.out.print(motHide[i]);
