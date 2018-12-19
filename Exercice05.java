@@ -1,4 +1,4 @@
-package Exercices;
+package exercices03a23;
 
 import java.util.Scanner;
 
@@ -10,6 +10,6 @@ public class Exercice05 {
 		for (int i = 0; i <= 10; i++) {
 			System.out.println(table + " fois " + i + " est égale à " + i * table);
 		}
-	scan.close();
+		scan.close();
 	}
 }

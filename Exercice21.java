@@ -1,4 +1,4 @@
-package Exercices;
+package exercices03a23;
 
 public class Exercice21 {
 	/**
@@ -10,7 +10,7 @@ public class Exercice21 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final int mat1 = 2;//constante qui définit le nombre de colonnes.
+		final int mat1 = 2;//constante qui définit le nombre de colonnes. //on peut déclarer une constante en mettant le nom de la variable en MAJ.
 		final int mat2 = 5; //constante qui définit le nombre de ligne.
 		int[][] matrice1 = new int[mat1][mat2];//init tableau 2D 1.
 		int[][] matrice2 = new int[mat1][mat2];//init tableau 2D 2.

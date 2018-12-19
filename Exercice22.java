@@ -1,28 +1,25 @@
-package Exercices;
+package exercices03a23;
 
-/**
- * Exercice 22
- * Ecrivez le programme java qui affiche la bannière suivante :
- * Ecrivez ensuite le programme principal qui appelle cette procédure
- * @param args
- */
+import java.util.Scanner;
 
 public class Exercice22 {
-	public static void affichBanière() {//methode public(utilisable dans d'autres class) static(pour pouvoir la réutiliser dans le main) void(sans retour) affichBanière(nom de ma méthode) ()(paramètre de la methode)
-		String banière = "*************************************************************\n" + 
-				"**\n" + 
-				"**\n" + 
-				"**\n" + 
-				"BIENVENUE\n" + 
-				"**\n" + 
-				"**\n" + 
-				"**\n" + 
-				"*************************************************************";
-		 System.out.println(banière);
+	/**
+	 * Exercice 23
+	 * (Upgrade de l'exercice 14)
+	 * Demandez à l'utilisateur de saisir un mot
+	 * Ecrivez une méthode qui prend en paramètre une chaine de caractère et qui retourne cette chaine en majuscule.
+	 * Utilisez cette méthode pour retourner à l'utilisateur son mot en majuscule.
+	 * @param args
+	 */
+	public static String upToMaj(String mot) {//ma methode qui prend une string en paramètre
+		return mot.toUpperCase();//et transforme cette string en majuscule
 	}
 	public static void main(String[] args) {
-		affichBanière();//on appelle la methode.
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Entrez un mot");
+		String motSaisi = sc.nextLine();
+		System.out.println(upToMaj(motSaisi));//j'applique ma methode à ma saisi.
+		sc.close();
 	}
 
 }

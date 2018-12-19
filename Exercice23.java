@@ -1,25 +1,27 @@
-package Exercices;
+package exercices03a23;
 
 import java.util.Scanner;
 
 public class Exercice23 {
 	/**
-	 * Exercice 23
-	 * (Upgrade de l'exercice 14)
-	 * Demandez à l'utilisateur de saisir un mot
-	 * Ecrivez une méthode qui prend en paramètre une chaine de caractère et qui retourne cette chaine en majuscule.
-	 * Utilisez cette méthode pour retourner à l'utilisateur son mot en majuscule.
+	 * Exercice 24
+	 * Demandez à l'utilisateur de saisir un nombre
+	 * Ecrivez la méthode qui retourne cette valeur élevé à la puissance 3.
+	 * utilisez cette méthode pour retourner la saisie de l'utilisateur à la puissance 3.
 	 * @param args
 	 */
-	public static String upToMaj(String mot) {//ma methode qui prend une string en paramètre
-		return mot.toUpperCase();//et transforme cette string en majuscule
+	public static int puissance3(int nombre) {//methode qui prend mon nombre en paramètre.
+		int calc = nombre * nombre * nombre;//calcul de puissance 3 du nombre.
+		return calc;//retourne le resultat.
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Entrez un mot");
-		String motSaisi = sc.nextLine();
-		System.out.println(upToMaj(motSaisi));//j'applique ma methode à ma saisi.
+		System.out.println("veuillez entrer un nombre");
+		int nombreSaisi = sc.nextInt();
+		System.out.println("voici votre nombre puissance 3");
+		System.out.println(puissance3(nombreSaisi));//appel de ma methode avec ma saisi en paramètre.
 		sc.close();
 	}
+	
 
 }
